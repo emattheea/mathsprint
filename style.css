@@ -48,7 +48,7 @@ body {
 
 .card {
   margin: 5px auto 10px;
-  height: 600px;
+  height: 100px;
 }
 
 /* Splash Page -------------------- */
@@ -77,10 +77,10 @@ input[type="radio"] {
 }
 
 label {
-  position: relative;
-  top: 20px;
+  position: revert;
+  top: 0px;
   left: 20px;
-  font-size: 30px;
+  font-size: 23px;
 }
 
 .selected-label {
@@ -90,8 +90,8 @@ label {
 
 .best-score {
   position: relative;
-  top: -100px;
-  left: 330px;
+  top: -20px;
+  left: 350px;
   display: flex;
   flex-direction: column;
   justify-content: center;
