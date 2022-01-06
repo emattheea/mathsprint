@@ -8,54 +8,77 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class ="game-container">
+    <div class="div game-container">
         <div class="header">
-            <h1>
-                Math Bell Ringer
+            <h1> 
+                zBellringer
             </h1>
         </div>
-        <div class="card" id="splash-page"  >
-            
-            <div class="form" id="start-form">
-                <div class="selction-container">
-
-                    <div class="radio-container">
-                        <label for="value-25">25 questions</label>
-                        <input type=" radio " name="questions"  value ="25" id="value-25">
-                            <span class="best-score">
-                            <span>Best Score</span>
-                            <span class = " best-score-value">0.0s</span>
-                        </span>
-                    </div>
-                <div class="selction-container">
-                    <div class="radio-container">
-                        <label for="value-50">50 questions</label>
-                        <input type=" radio " name="questions"  value ="50" id="value-50">
-                            <span class="best-score">
-                                <span> Best Score</span> 
-                                <span class = " best-score-value">0.0s</span>
-                        </span>
-                     </div>
-                <div class="selction-container">
-                    <div class="radio-container">
-                        <label for="value-99">99 questions</label>
-                        <input type=" radio " name="questions"  value ="99" id="value-99">
-                            <span class="best-score">
-                                <span>Best Score</span>
-                            <span class = " best-score-value">0.0s</span>
-                        </span>
-                        </div>
+        <div class="card" id="splash-page" hidden >
+         <form action="" id="start-form">
+            <div class="selection-container">
+                <div class="radio-container">
+                    <label for="value-25">25 Questions</label>
+                    <input type="radio" name="Questions" value="25" id="value-25">
+                    <span class="best-score">
+                        <span>Best Score</span>
+                        <span class="best-score-value">0.0</span>
+                    </span>
                 </div>
-                <div>
-                    <button class= "start" type= "submit">
-                        Start Round 
-                </button>
+                <div class="radio-container">
+                    <label for="value-50">50 Questions</label>
+                    <input type="radio" name="Questions" value="50" id="value-50">
+                    <span class="best-score">
+                        <span>Best Score</span>
+                        <span class="best-score-value">0.0</span>
+                    </span>
                 </div>
+                <div class="radio-container">
+                    <label for="value-99">99 Questions</label>
+                    <input type="radio" name="Questions" value="99" id="value-99">
+                    <span class="best-score">
+                        <span>Best Score</span>
+                        <span class="best-score-value">0.0</span>
+                    </span>
+                </div>
+           </div>
+           
+           <div class="selection-footer">
+               <button class="start" type="submit">START</button>
+           </div>
+        </form>
+        </div>
+    <div class="card" id="count-downpage" hidden>
+        <h1 class="countdown">3</h1>
+    </div>
+    
+    <div class="card" id="game-page">
+        <div class="item-container">
+            <div class="selected-item"></div>    
+            <div class="item">
+                <h1>3 x 3 = 100</h1>
+            </div>
+            <div class="item">
+                <h1>3 x 3 = 100</h1>
+            </div>
+            <div class="item">
+                <h1>3 x 3 = 100</h1>
+            </div>
+            <div class="item">
+                <h1>3 x 3 = 100</h1>
+            </div>
+            <div class="item">
+                <h1>3 x 3 = 100</h1>
+            </div>
+            <div class="item">
+                <h1>3 x 3 = 100</h1>
             </div>
         </div>
-        <div class="card" id="countdown-page">
-            <h1 class="countdown">3</h1>
-        </div>
+   <div class="item-footer">
+       <button class="wrong">Wrong</button>
+       <button class="right">Right</button>
+   </div>
+    </div>
     </div>
     <script src="script.js"></script>
 </body>
